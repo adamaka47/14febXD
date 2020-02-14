@@ -1,30 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>For you, my Friend <3</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
+
+	<style>
+
+		
+		body {
+			background-color: #000;
+		}
+
+
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		rect {
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+			-webkit-transform-origin: center;
+			-moz-transform-origin: center;
+			-ms-transform-origin: center;
+			-o-transform-origin: center;
+			transform-origin: center;
+		}
+
+
+		.heart {
+
+			fill: #ff0036;
+			-webkit-transform-origin: center;
+			-moz-transform-origin: center;
+			-ms-transform-origin: center;
+			-o-transform-origin: center;
+			transform-origin: center;
+			animation: animHeart 2s linear infinite backwards;
+
+		}
+
+
+		@keyframes animHeart {
+			0%, 100% {
+				-webkit-transform: scale(1.05);
+				-ms-transform: scale(1.05);
+				-o-transform: scale(1.05);
+				transform: scale(1.05);
+				fill: indigo;
+			}
+			40% {
+				-webkit-transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				-o-transform: scale(1.2);
+				transform: scale(1.2);
+				fill: red;
+			}
+			60% {
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				-o-transform: scale(1.1);
+				transform: scale(1.1);
+				fill: #9d3;
+			}
+			80% {
+				-webkit-transform: scale(1.4);
+				-ms-transform: scale(1.4);
+				-o-transform: scale(1.4);
+				transform: scale(1.4);
+				fill: #fea100;
+			}
+		}
+
+		@keyframes animHeart2 {
+			0%, 100% {
+				-webkit-transform: translateY(7px) scale(1.05);
+				-ms-transform: translateY(7px) scale(1.05);
+				-o-transform: translateY(7px) scale(1.05);
+				transform: translateY(7px) scale(1.05);
+				fill: indigo;
+			}
+			40% {
+				-webkit-transform: translateY(7px) scale(1.2);
+				-ms-transform: translateY(7px) scale(1.2);
+				-o-transform: translateY(7px) scale(1.2);
+				transform: translateY(7px) scale(1.2);
+				fill: red;
+			}
+			60% {
+				-webkit-transform: translateY(7px) scale(1.1);
+				-ms-transform: translateY(7px) scale(1.1);
+				-o-transform: translateY(7px) scale(1.1);
+				transform: translateY(7px) scale(1.1);
+				fill: #9d3;
+			}
+			80% {
+				-webkit-transform: translateY(7px) scale(1.4);
+				-ms-transform: translateY(7px) scale(1.4);
+				-o-transform: translateY(7px) scale(1.4);
+				transform: translateY(7px) scale(1.4);
+				fill: #fea100;
+			}
+		}
+
+
+		.heart-2 {
+			-webkit-transform-origin: center;
+			-moz-transform-origin: center;
+			-ms-transform-origin: center;
+			-o-transform-origin: center;
+			transform-origin: center;
+			animation: animHeart2 2s linear infinite backwards;
+
+		}
+
+
+
+
+
+
+
+	</style>
 <body>
 
 
-    <main>
-        <div class="dzhuli">
+	
 
-        </div>
-    </main>
-    
-    
+	<svg width="250" height="250">
 
-    <script>
-        document.querySelector('main').addEventListener('click', function(e) {
-            if (e.target.classList.contains('dzhuli')) {
-                // Я бы писал тут куча кода, но мне через 5 минут надо идти в ВУЗ
-                // С 14 кароче, братик
-                alert('Сердечко от br0')
-            }
-        })
-    </script>
+		<g class="heart"> 
+
+			<rect x="75" y="75" width="100" height="100" stroke="none" stroke-width="0"/>
+
+			<circle r="50" cx="90" cy="90" stroke="none" stroke-width="0"/>
+
+			<circle r="50" cx="160" cy="90" stroke="none" stroke-width="0"/>
+
+
+		</g>
+
+		<g class="heart-2"> 
+
+			<rect x="75" y="75" width="100" height="100" stroke="none" stroke-width="0"/>
+
+			<circle r="50" cx="90" cy="90" stroke="none" stroke-width="0"/>
+
+			<circle r="50" cx="160" cy="90" stroke="none" stroke-width="0"/>
+
+
+		</g>
+
+
+	</svg>	
+
+
+	<script>
+
+
+	</script>
+
+
 </body>
 </html>
